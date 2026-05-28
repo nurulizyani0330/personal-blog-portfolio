@@ -273,8 +273,7 @@ footer {
     .about-container {
         flex-direction: column;
     }
-}
-/* --- 10. REKA BENTUK DARK MODE --- */
+    /* --- 10. REKA BENTUK DARK MODE --- */
 /* Warna baru apabila tema gelap diaktifkan */
 body.dark-theme {
     --bg-light: #1a202c;     /* Latar belakang jadi gelap */
@@ -314,4 +313,5 @@ body.dark-theme input, body.dark-theme textarea {
 .theme-toggle-btn:hover {
     background-color: var(--accent-color);
     color: white;
+}
 }
