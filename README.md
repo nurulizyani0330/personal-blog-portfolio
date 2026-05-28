@@ -1,4 +1,3 @@
-# personal-blog-portfolio
 # My Personal Portfolio Blog 🚀
 
 ## 📝 Deskripsi Projek

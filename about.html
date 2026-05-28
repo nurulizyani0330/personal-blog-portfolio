@@ -48,22 +48,17 @@
         <p>&copy; 2026 Nurul Izyani. CSD 34203 | Universiti Sultan Zainal Abidin.</p>
     </footer>
 
-    <!-- KOD JAVASCRIPT DARK MODE -->
     <script>
         const themeToggleBtn = document.getElementById('theme-toggle');
         const body = document.body;
 
-        // Semak jika pengguna pernah memilih tema gelap sebelum ini (Local Storage)
         if (localStorage.getItem('theme') === 'dark') {
             body.classList.add('dark-theme');
             themeToggleBtn.textContent = '☀️ Light';
         }
 
-        // Fungsi apabila butang diklik
         themeToggleBtn.addEventListener('click', () => {
             body.classList.toggle('dark-theme');
-            
-            // Tukar teks butang dan simpan tetapan pengguna
             if (body.classList.contains('dark-theme')) {
                 themeToggleBtn.textContent = '☀️ Light';
                 localStorage.setItem('theme', 'dark');
