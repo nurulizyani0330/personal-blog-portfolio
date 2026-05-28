@@ -31,4 +31,4 @@ Laman web ini merupakan portfolio blog peribadi yang dibina sebagai sebahagian d
 
 1. **Klon direktori ini ke komputer anda:**
    ```bash
-   git clone [https://github.com/username/repository-anda.git](https://github.com/username/repository-anda.git)
+   git clone [https://github.com/nurulizyani0330/personal-blog-portfolio.git](https://github.com/nurulizyani0330/personal-blog-portfolio.git)

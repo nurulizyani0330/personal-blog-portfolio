@@ -274,3 +274,44 @@ footer {
         flex-direction: column;
     }
 }
+/* --- 10. REKA BENTUK DARK MODE --- */
+/* Warna baru apabila tema gelap diaktifkan */
+body.dark-theme {
+    --bg-light: #1a202c;     /* Latar belakang jadi gelap */
+    --text-dark: #f7fafc;    /* Tulisan bertukar cerah */
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+body.dark-theme .blog-card {
+    background-color: #2d3748; /* Kad blog jadi kelabu gelap */
+    color: var(--text-light);
+}
+
+body.dark-theme .blog-content h3 {
+    color: var(--text-light);
+}
+
+body.dark-theme input, body.dark-theme textarea {
+    background-color: #2d3748;
+    color: var(--text-light);
+    border-color: #4a5568;
+}
+
+/* Gaya reka bentuk untuk butang Dark Mode */
+.theme-toggle-btn {
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
