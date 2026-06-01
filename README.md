@@ -25,7 +25,7 @@ This website is a personal portfolio blog designed to showcase my digital profil
 
 ## 📸 Paparan Skrin (Screenshots)
 
-<img src="light home.png" alt="Paparan Utama" width="100%">
+<img src="lighthome.png" alt="Paparan Utama" width="100%">
 
 *Rajah 1: Antara muka Halaman Utama (Home Page) pada paparan desktop.*
 
