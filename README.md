@@ -21,7 +21,7 @@ Laman web ini merupakan portfolio blog peribadi yang dibina sebagai sebahagian d
 ---
 
 ## 📸 Paparan Skrin (Screenshots)
-![Paparan Utama](letak_pautan_gambar_di_sini)
+![Paparan Utama](light home.png)
 *Rajah 1: Antara muka Halaman Utama (Home Page) pada paparan desktop.*
 
 ---
@@ -30,4 +30,4 @@ Laman web ini merupakan portfolio blog peribadi yang dibina sebagai sebahagian d
 
 1. **Klon direktori ini ke komputer anda:**
    ```bash
-   git clone [https://github.com/nurulizyani0330/personal-blog-portfolio.git](https://github.com/nurulizyani0330/personal-blog-portfolio.git)
+   git clone [https://nurulizyani0330.github.io/personal-blog-portfolio/](https://nurulizyani0330.github.io/personal-blog-portfolio/)
