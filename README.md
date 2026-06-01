@@ -1,33 +1,36 @@
 # My Personal Portfolio Blog 🚀
 
-## 📝 Deskripsi Projek
-Laman web ini merupakan portfolio blog peribadi yang dibina sebagai sebahagian daripada tugasan individu bagi kursus CSD 34203 Special Topics in Software Development di UniSZA. Blog ini mempamerkan profil diri, artikel penulisan, serta kemahiran pembangunan web saya.
+## 📝 Project Description
+This website is a personal portfolio blog designed to showcase my digital profile, software development skills, and tech articles. It was developed as an individual assignment for the course **CSD 34203 Special Topics in Software Development** at **Universiti Sultan Zainal Abidin (UniSZA)**. 
 
 ---
 
-## ✨ Ciri-Ciri Utama (Features)
-- **Reka Bentuk Responsif:** Laman web dioptimumkan sepenuhnya untuk paparan komputer dan peranti mudah alih (mobile-friendly).
-- **Halaman Blog Dedikasi:** Mengandungi 3 sampel artikel penulisan yang tersusun rapi.
-- **Interaksi UI:** [Nyatakan interaksi anda, contoh: Fungsi mod gelap (Dark Mode) terbina menggunakan JavaScript].
-- **Borang Hubungi:** Halaman 'Contact' yang mesra pengguna untuk sebarang maklum balas.
+## ✨ Features
+- **Responsive Web Design:** The layout is fully optimized using CSS Media Queries to render beautifully across desktops, tablets, and mobile smartphones.
+- **Interactive Dark Mode Toggle:** Features a custom-built theme switcher that allows users to seamlessly switch between light and dark visual themes.
+- **State Persistence (Local Storage):** Uses browser storage capabilities to remember the user's preferred theme setting (Light/Dark) even after refreshing the page.
+- **Comprehensive Structure:** Built with organized semantic pages including Home, About Me, Blog (featuring 3 sample posts), and a functional Contact layout.
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
-- **HTML5** – Membina struktur halaman (Home, About, Blog, Contact).
-- **CSS3** – Menguruskan reka bentuk grafik, susun atur grid/flexbox, dan responsiviti.
-- **JavaScript (Vanilla)** – Menguruskan logik interaksi pengguna di laman web.
+## 🛠️ Technologies Used
+- **HTML5** – Structures the layout skeleton across all core pages.
+- **CSS3** – Manages modern layout grid/flexbox positioning, custom coloring schemes, typography, and mobile responsiveness.
+- **JavaScript (Vanilla)** – Powers the conditional logic for the theme switching toggle mechanism.
+- **Git & GitHub** – Utilized for source control management, incremental commit logging, and remote repository hosting.
 
 ---
+
+
 
 ## 📸 Paparan Skrin (Screenshots)
-![Paparan Utama](light home.png)
-*Rajah 1: Antara muka Halaman Utama (Home Page) pada paparan desktop.*
 
----
+<img src="light home.png" alt="Paparan Utama" width="100%">
+
+*Rajah 1: Antara muka Halaman Utama (Home Page) pada paparan desktop.*
 
 ## 💻 Cara Menjalankan Projek Secara Lokal
 
 1. **Klon direktori ini ke komputer anda:**
-   ```bash
-   git clone [https://nurulizyani0330.github.io/personal-blog-portfolio/](https://nurulizyani0330.github.io/personal-blog-portfolio/)
+```bash
+   git clone [https://github.com/nurulizyani0330/personal-blog-portfolio.git](https://github.com/nurulizyani0330/personal-blog-portfolio.git)
