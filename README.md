@@ -21,10 +21,9 @@ This website is a personal portfolio blog designed to showcase my digital profil
 
 ---
 
-## Visuals & Live Demo
-🔗 Live Demo Link
+## 🔗 Live Demo Link
 The live production deployment of this portfolio blog can be accessed online via GitHub Pages here:
-👉 [https://nurulizyani0330.github.io/personal-blog-portfolio/](https://nurulizyani0330.github.io/personal-blog-portfolio/)
+[https://nurulizyani0330.github.io/personal-blog-portfolio/](https://nurulizyani0330.github.io/personal-blog-portfolio/)
 
 ## 📸 Screenshots
 
