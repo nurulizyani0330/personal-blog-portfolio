@@ -21,16 +21,21 @@ This website is a personal portfolio blog designed to showcase my digital profil
 
 ---
 
+## Visuals & Live Demo
+🔗 Live Demo Link
+The live production deployment of this portfolio blog can be accessed online via GitHub Pages here:
+👉 [https://nurulizyani0330.github.io/personal-blog-portfolio/](https://nurulizyani0330.github.io/personal-blog-portfolio/)
 
+## 📸 Screenshots
 
-## 📸 Paparan Skrin (Screenshots)
+<img src="lighthome.png" alt="Main Interface" width="100%">
 
-<img src="lighthome.png" alt="Paparan Utama" width="100%">
+*Figure 1: The Main Interface (Home Page) on a desktop view.*
 
-*Rajah 1: Antara muka Halaman Utama (Home Page) pada paparan desktop.*
+---
 
-## 💻 Cara Menjalankan Projek Secara Lokal
+## 💻 How to Run the Project Locally
 
-1. **Klon direktori ini ke komputer anda:**
+1. **Clone this repository to your computer:**
 ```bash
    git clone [https://github.com/nurulizyani0330/personal-blog-portfolio.git](https://github.com/nurulizyani0330/personal-blog-portfolio.git)
