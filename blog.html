@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Personal Portfolio Blog</title>
+    <title>Connect | Personal Portfolio Blog</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
@@ -22,40 +23,34 @@
     </header>
 
     <main>
-        <h2>Latest Articles</h2>
-        <p>Sharing programming knowledge and software system development tutorials.</p>
+        <section class="profile-card-container" style="max-width: 600px; margin: 3rem auto; padding: 2.5rem; text-align: center; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); background-color: var(--card-bg, #ffffff);">
+            <div class="profile-avatar" style="font-size: 4rem; margin-bottom: 1rem;">👩‍💻</div>
+            
+            <h2 style="margin-bottom: 0.5rem;">Nurul Izyani</h2>
+            <p style="color: #666; font-style: italic; margin-bottom: 1.5rem;">Computer Science Student (Software Development) at UniSZA</p>
+            
+            <p style="line-height: 1.6; margin-bottom: 2rem;">
+                Welcome to my digital business card. Connect with me through my professional networks below or download a copy of my official resume to view my complete technical profile and project history.
+            </p>
 
-        <div class="blog-grid">
-            <article class="blog-card">
-                <div class="blog-img-placeholder">🚀</div>
-                <div class="blog-content">
-                    <div class="blog-meta">May 25, 2026 • Tutorial</div>
-                    <h3>Easy Steps to Understand Version Control Using Git</h3>
-                    <p>Learn how Git helps software developers manage code modifications and collaborate efficiently within development teams.</p>
-                    <a href="#" class="read-more">Read More &rarr;</a>
-                </div>
-            </article>
+            <div class="social-links-container" style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 2.5rem;">
+                <a href="https://github.com/nurulizyani0330" target="_blank" title="GitHub Profile" style="font-size: 2rem; color: #333; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/your-username-here" target="_blank" title="LinkedIn Profile" style="font-size: 2rem; color: #0077b5; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:nurulizyani0330@gmail.com" title="Send Email" style="font-size: 2rem; color: #ea4335; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
 
-            <article class="blog-card">
-                <div class="blog-img-placeholder">🎨</div>
-                <div class="blog-content">
-                    <div class="blog-meta">May 18, 2026 • Web Design</div>
-                    <h3>Tips for Building Responsive Layouts with CSS Flexbox</h3>
-                    <p>A practical guide to modern web layout design to ensure your system elements render cleanly on mobile device viewports.</p>
-                    <a href="#" class="read-more">Read More &rarr;</a>
-                </div>
-            </article>
-
-            <article class="blog-card">
-                <div class="blog-img-placeholder">💡</div>
-                <div class="blog-content">
-                    <div class="blog-meta">May 10, 2026 • Entrepreneur Mindset</div>
-                    <h3>The Importance of Problem-Solving Skills for Programmers</h3>
-                    <p>Coding is more than just writing syntax—it's how you translate real-world problems into high-value computer system logic.</p>
-                    <a href="#" class="read-more">Read More &rarr;</a>
-                </div>
-            </article>
-        </div>
+            <div class="resume-button-container">
+                <a href="assets/resume.pdf" download="Nurul_Izyani_Resume.pdf" class="btn" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 2rem; font-weight: bold; text-decoration: none; border-radius: 50px; background-color: #007bff; color: #fff; transition: background-color 0.2s;">
+                    <i class="fas fa-file-download"></i> Download CV / Resume
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer>
