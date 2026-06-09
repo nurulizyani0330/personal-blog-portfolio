@@ -28,14 +28,14 @@ The live production deployment of this portfolio blog can be accessed online via
 ## 📸 Screenshots
 
 <img src="home.png" alt="Main Interface" width="100%">
-*Figure 1: The Main Interface (Home Page) on a desktop view.*
+Figure 1: The Main Interface (Home Page) on a desktop view.
 <img src="about.png" alt="About Interface" width="100%">
-*Figure 2: The About Interface (About Page) on a desktop view.*
+Figure 2: The About Interface (About Page) on a desktop view.
 <img src="blog.png" alt="Blog Interface" width="100%">
-*Figure 3: The Blog Interface (Blog Page) on a desktop view.*
+Figure 3: The Blog Interface (Blog Page) on a desktop view.
 <img src="contact.png" alt="Contact Interface" width="100%">
-*Figure 4: The Contact Interface (Contact Page) on a desktop view.*
----
+Figure 4: The Contact Interface (Contact Page) on a desktop view.
+
 
 ## 💻 How to Run the Project Locally
 
