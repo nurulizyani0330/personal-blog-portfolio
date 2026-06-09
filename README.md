@@ -14,9 +14,9 @@ This website is a personal portfolio blog designed to showcase my digital profil
 ---
 
 ## 🛠️ Technologies Used
-- **HTML5** – Structures the layout skeleton across all core pages.
-- **CSS3** – Manages modern layout grid/flexbox positioning, custom coloring schemes, typography, and mobile responsiveness.
-- **JavaScript (Vanilla)** – Powers the conditional logic for the theme switching toggle mechanism.
+- **HTML** – Structures the layout skeleton across all core pages.
+- **CSS** – Manages modern layout grid/flexbox positioning, custom coloring schemes, typography, and mobile responsiveness.
+- **JavaScript** – Powers the conditional logic for the theme switching toggle mechanism.
 - **Git & GitHub** – Utilized for source control management, incremental commit logging, and remote repository hosting.
 
 ---
@@ -27,10 +27,14 @@ The live production deployment of this portfolio blog can be accessed online via
 
 ## 📸 Screenshots
 
-<img src="lighthome.png" alt="Main Interface" width="100%">
-
+<img src="home.png" alt="Main Interface" width="100%">
 *Figure 1: The Main Interface (Home Page) on a desktop view.*
-
+<img src="about.png" alt="About Interface" width="100%">
+*Figure 2: The About Interface (About Page) on a desktop view.*
+<img src="blog.png" alt="Blog Interface" width="100%">
+*Figure 3: The Blog Interface (Blog Page) on a desktop view.*
+<img src="contact.png" alt="Contact Interface" width="100%">
+*Figure 4: The Contact Interface (Contact Page) on a desktop view.*
 ---
 
 ## 💻 How to Run the Project Locally
