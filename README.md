@@ -10,20 +10,20 @@ This website is a professional personal portfolio blog designed to showcase my d
 ### 🎨 Core Features
 - **Responsive Web Design:** The layout is fully optimized using CSS Grid, Flexbox, and Media Queries to render beautifully across desktops, tablets, and mobile smartphones.
 - **Interactive Dark Mode Toggle:** Features a custom-built theme switcher that allows users to seamlessly switch between light and dark visual themes.
-- **State Persistence (Local Storage):** Uses browser storage capabilities (`localStorage`) to remember the user's preferred theme setting (Light/Dark) even after refreshing or closing the browser window.
+- **State Persistence (Local Storage):** Uses browser storage capabilities (localStorage) to remember the user's preferred theme setting (Light/Dark) even after refreshing or closing the browser window.
 - **Comprehensive Structure:** Built with organized semantic structural pages including Home, About Me, Blog, and Contact layouts.
 
 ### 🚀 Advanced Features (Value Creation & Innovation)
-- **Dynamic Client-Side Filter:** The Project Blog page features an interactive JavaScript category filter (`All Systems`, `Web System`, `IoT Project`) allowing real-time portfolio navigation without page reloads.
-- **Form Interception & Feedback Logic:** The Contact Form overrides default submission behaviors (`event.preventDefault()`) to handle basic validation, input resetting, and displays a custom animated success notification banner.
-- **Media Optimization:** Handled responsive hardware layout scaling using `object-fit: contain` constraints to ensure technical project hardware images remain uncropped and fully visible.
+- **Dynamic Client-Side Filter:** The Project Blog page features an interactive JavaScript category filter (All Systems, Web System, IoT Project) allowing real-time portfolio navigation without page reloads.
+- **Form Interception & Feedback Logic:** The Contact Form overrides default submission behaviors (event.preventDefault()) to handle basic validation, input resetting, and displays a custom animated success notification banner.
+- **Media Optimization:** Handled responsive hardware layout scaling using object-fit: contain constraints to ensure technical project hardware images remain uncropped and fully visible.
 
 ---
 
 ## 🛠️ Technologies Used
-- **HTML5** – Structures the layout skeleton across all core pages using semantic tags.
-- **CSS3** – Manages modern layout positioning, interactive hovering states, keyframe animations, dark-theme variables, and mobile responsiveness.
-- **JavaScript (ES6+)** – Powers the conditional logic for theme state persistence, dynamic DOM filtering, and form submit event interceptions.
+- **HTML** – Structures the layout skeleton across all core pages using semantic tags.
+- **CSS** – Manages modern layout positioning, interactive hovering states, keyframe animations, dark-theme variables, and mobile responsiveness.
+- **JavaScript** – Powers the conditional logic for theme state persistence, dynamic DOM filtering, and form submit event interceptions.
 - **Git & GitHub** – Utilized for structural source control management, incremental progress tracking, and remote repository hosting.
 
 ---
