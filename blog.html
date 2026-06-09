@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connect | Personal Portfolio Blog</title>
+    <title>Projects | Personal Portfolio Blog</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Mengoptimumkan paparan imej projek supaya sekata dan responsif */
+        .project-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        /* Memastikan susunan grid kekal kemas mengikut fail style.css anda */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
 
@@ -23,34 +39,50 @@
     </header>
 
     <main>
-        <section class="profile-card-container" style="max-width: 600px; margin: 3rem auto; padding: 2.5rem; text-align: center; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); background-color: var(--card-bg, #ffffff);">
-            <div class="profile-avatar" style="font-size: 4rem; margin-bottom: 1rem;">👩‍💻</div>
-            
-            <h2 style="margin-bottom: 0.5rem;">Nurul Izyani</h2>
-            <p style="color: #666; font-style: italic; margin-bottom: 1.5rem;">Computer Science Student (Software Development) at UniSZA</p>
-            
-            <p style="line-height: 1.6; margin-bottom: 2rem;">
-                Welcome to my digital business card. Connect with me through my professional networks below or download a copy of my official resume to view my complete technical profile and project history.
-            </p>
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <h2>Latest Projects</h2>
+            <p>A showcase of my software development work, academic systems, and IoT implementations.</p>
+        </div>
 
-            <div class="social-links-container" style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 2.5rem;">
-                <a href="https://github.com/nurulizyani0330" target="_blank" title="GitHub Profile" style="font-size: 2rem; color: #333; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com/in/your-username-here" target="_blank" title="LinkedIn Profile" style="font-size: 2rem; color: #0077b5; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:nurulizyani0330@gmail.com" title="Send Email" style="font-size: 2rem; color: #ea4335; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
+        <div class="projects-grid">
+            
+            <article class="blog-card">
+                <div class="project-img-wrapper">
+                    <img src="images/book.jpg" alt="Library Management System" class="project-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="blog-img-placeholder" style="display:none; height: 200px;"><i class="fas fa-book"></i></div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">Academic Project • Web System</div>
+                    <h3>Library Management System</h3>
+                    <p>A digital web application designed to streamline library operations, allowing administrators to track book inventories, manage student borrowings, and automate overdue fine calculations efficiently.</p>
+                </div>
+            </article>
 
-            <div class="resume-button-container">
-                <a href="assets/resume.pdf" download="Nurul_Izyani_Resume.pdf" class="btn" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 2rem; font-weight: bold; text-decoration: none; border-radius: 50px; background-color: #007bff; color: #fff; transition: background-color 0.2s;">
-                    <i class="fas fa-file-download"></i> Download CV / Resume
-                </a>
-            </div>
-        </section>
+            <article class="blog-card">
+                <div class="project-img-wrapper">
+                    <img src="images/training.jpg" alt="IoT Smart Training Tracker" class="project-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="blog-img-placeholder" style="display:none; height: 200px;"><i class="fas fa-heartbeat"></i></div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">IoT Project • Hardware Integration</div>
+                    <h3>Smart Training Tracker</h3>
+                    <p>An Internet of Things (IoT) system engineered to monitor physical training metrics in real-time. It integrates hardware sensors to gather performance analytics and syncs data seamlessly with a web dashboard for review.</p>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="project-img-wrapper">
+                    <img src="images/fyp.png" alt="SweepyClean Management System" class="project-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="blog-img-placeholder" style="display:none; height: 200px;"><i class="fas fa-broom"></i></div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">Final Year Project • Full-Stack System</div>
+                    <h3>SweepyClean Services</h3>
+                    <p>A smart web-based home cleaning service management platform built using PHP and MySQL. Features automated scheduling, service allocation, and customer management structures tailored for modern workflows.</p>
+                </div>
+            </article>
+
+        </div>
     </main>
 
     <footer>

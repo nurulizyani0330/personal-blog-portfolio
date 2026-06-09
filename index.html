@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Personal Portfolio Blog</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
@@ -26,12 +27,43 @@
             <div class="hero-text">
                 <h1>Welcome to My Blog</h1>
                 <p>Hi, I'm Nurul Izyani. Here I share my journey through the world of programming, web system design, and the latest software technologies.</p>
-                <a href="blog.html" class="btn">Read Blog Now</a>
+                
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem;">
+                    <a href="blog.html" class="btn"><i class="fas fa-address-card"></i> Explore Project</a>
+                    <a href="assets/resume.pdf" download="Nurul_Izyani_Resume.pdf" class="btn" style="background-color: #007bff; color: #fff;"><i class="fas fa-file-download"></i> Download Resume</a>
+                </div>
             </div>
             <div class="hero-image">
                 👩‍💻
             </div>
         </section>
+
+        <hr style="border: 0; height: 1px; background: #cbd5e0; margin: 3rem 0;">
+
+        <section class="academic-showcase">
+            <h2 style="margin-bottom: 1.5rem; text-align: center; color: var(--primary-color);">Academic Achievements</h2>
+            
+            <div class="blog-grid" style="margin-top: 1rem;">
+                
+                <div class="blog-card" style="padding: 1.5rem; display: flex; align-items: center; gap: 1.5rem;">
+                    <div style="font-size: 3rem; color: var(--primary-color);"><i class="fas fa-chart-line"></i></div>
+                    <div>
+                        <h3 style="margin: 0; font-size: 1.2rem;">Current CGPA</h3>
+                        <p style="font-size: 2rem; font-weight: bold; margin: 0.5rem 0 0 0;">3.60</p>
+                    </div>
+                </div>
+
+                <div class="blog-card" style="padding: 1.5rem; display: flex; align-items: center; gap: 1.5rem;">
+                    <div style="font-size: 3rem; color: #d69e2e;"><i class="fas fa-award"></i></div>
+                    <div>
+                        <h3 style="margin: 0; font-size: 1.2rem;">Dean's List</h3>
+                        <p style="font-size: 2rem; font-weight: bold; margin: 0.5rem 0 0 0;">3 Semesters</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
     <footer>

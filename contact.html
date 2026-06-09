@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Personal Portfolio Blog</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
@@ -24,7 +25,33 @@
     <main>
         <section class="contact-section">
             <h2>Contact Me</h2>
-            <p style="margin-bottom: 2rem;">Have questions, project ideas, or want to collaborate? Please fill out the form below.</p>
+            <p style="margin-bottom: 2rem;">Have questions, project ideas, or want to collaborate? Reach out directly via social media or fill out the form below.</p>
+
+            <div class="social-contact-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 0.5rem; margin-bottom: 2.5rem;">
+                
+                <a href="https://wa.me/60136313514" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.4rem; padding: 0.6rem 0.8rem; background: var(--bg-card, #ffffff); color: #1a202c; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); text-decoration: none; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <i class="fab fa-whatsapp" style="font-size: 1.2rem; color: #25D366;"></i>
+                    <span style="font-weight: bold; font-size: 0.8rem;">WhatsApp</span>
+                </a>
+
+                <a href="https://instagram.com/izyani.bukhari" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.4rem; padding: 0.6rem 0.8rem; background: var(--bg-card, #ffffff); color: #1a202c; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); text-decoration: none; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <i class="fab fa-instagram" style="font-size: 1.2rem; color: #E1306C;"></i>
+                    <span style="font-weight: bold; font-size: 0.8rem;">Instagram</span>
+                </a>
+
+                <a href="mailto:nurulizyani0330@gmail.com" style="display: flex; align-items: center; justify-content: center; gap: 0.4rem; padding: 0.6rem 0.8rem; background: var(--bg-card, #ffffff); color: #1a202c; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); text-decoration: none; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <i class="fas fa-envelope" style="font-size: 1.2rem; color: #ea4335;"></i>
+                    <span style="font-weight: bold; font-size: 0.8rem;">Email</span>
+                </a>
+
+                <a href="https://github.com/nurulizyani0330" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 0.4rem; padding: 0.6rem 0.8rem; background: var(--bg-card, #ffffff); color: #1a202c; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); text-decoration: none; transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <i class="fab fa-github" style="font-size: 1.2rem; color: #24292e;"></i>
+                    <span style="font-weight: bold; font-size: 0.8rem;">GitHub</span>
+                </a>
+
+            </div>
+
+            <hr style="border: 0; height: 1px; background: #cbd5e0; margin-bottom: 2rem;">
 
             <form action="#" method="POST">
                 <div class="form-group">
@@ -39,7 +66,7 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
                 </div>
-                <button type="submit" class="btn" style="border: none; cursor: pointer;">Send Message</button>
+                <button type="submit" class="btn" style="border: none; cursor: pointer; width: 100%;">Send Message</button>
             </form>
         </section>
     </main>
