@@ -7,11 +7,22 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Mengoptimumkan paparan imej projek supaya sekata dan responsif */
-        .project-img {
+        /* Mengoptimumkan paparan imej projek supaya sekata, responsif dan memaparkan keseluruhan produk IoT */
+        .project-img-wrapper {
             width: 100%;
             height: 200px;
-            object-fit: cover;
+            background-color: #1a202c; /* Memberikan latar gelap neutral jika imej berskala contain */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-top-left-radius: 8px; /* Mengikut bucu lengkung blog-card */
+            border-top-right-radius: 8px;
+        }
+        .project-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Memastikan imej perkakasan IoT dipaparkan penuh tanpa terpotong/separuh */
             display: block;
         }
         /* Memastikan susunan grid kekal kemas mengikut fail style.css anda */
@@ -20,6 +31,37 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
+        }
+        /* Gaya Butang Penapis Kategori Dinamik */
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .filter-btn {
+            padding: 0.5rem 1.5rem;
+            border: 1px solid #cbd5e0;
+            background: transparent;
+            color: inherit;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .filter-btn.active, .filter-btn:hover {
+            background-color: #007bff;
+            color: #ffffff;
+            border-color: #007bff;
+        }
+        /* Kesan Animasi Transisi Kad Projek */
+        .blog-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
         }
     </style>
 </head>
@@ -39,17 +81,23 @@
     </header>
 
     <main>
-        <div style="text-align: center; margin-bottom: 3rem;">
+        <div style="text-align: center; margin-bottom: 1.5rem;">
             <h2>Latest Projects</h2>
             <p>A showcase of my software development work, academic systems, and IoT implementations.</p>
         </div>
 
-        <div class="projects-grid">
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All Systems</button>
+            <button class="filter-btn" data-filter="web">Web System</button>
+            <button class="filter-btn" data-filter="iot">IoT Project</button>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
             
-            <article class="blog-card">
+            <article class="blog-card" data-category="web">
                 <div class="project-img-wrapper">
                     <img src="images/book.jpg" alt="Library Management System" class="project-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="blog-img-placeholder" style="display:none; height: 200px;"><i class="fas fa-book"></i></div>
+                    <div class="blog-img-placeholder" style="display:none; height: 200px; justify-content: center; align-items: center; width: 100%;"><i class="fas fa-book"></i></div>
                 </div>
                 <div class="blog-content">
                     <div class="blog-meta">Academic Project • Web System</div>
@@ -58,22 +106,22 @@
                 </div>
             </article>
 
-            <article class="blog-card">
+            <article class="blog-card" data-category="iot">
                 <div class="project-img-wrapper">
                     <img src="images/training.jpg" alt="IoT Smart Training Tracker" class="project-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="blog-img-placeholder" style="display:none; height: 200px;"><i class="fas fa-heartbeat"></i></div>
+                    <div class="blog-img-placeholder" style="display:none; height: 200px; justify-content: center; align-items: center; width: 100%;"><i class="fas fa-heartbeat"></i></div>
                 </div>
                 <div class="blog-content">
                     <div class="blog-meta">IoT Project • Hardware Integration</div>
                     <h3>Smart Training Tracker</h3>
-                    <p>The Internet of Things (IoT) system is designed to monitor physical training metrics in real time. It integrates hardware sensors to collect performance analytics and seamlessly 
-                    syncs data to a web dashboard for review using Blynk.</p>                </div>
+                    <p>The Internet of Things (IoT) system is designed to monitor physical training metrics in real time. It integrates hardware sensors to collect performance analytics and seamlessly syncs data to a web dashboard for review using Blynk.</p>
+                </div>
             </article>
 
-            <article class="blog-card">
+            <article class="blog-card" data-category="web">
                 <div class="project-img-wrapper">
                     <img src="images/fyp.png" alt="SweepyClean Management System" class="project-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="blog-img-placeholder" style="display:none; height: 200px;"><i class="fas fa-broom"></i></div>
+                    <div class="blog-img-placeholder" style="display:none; height: 200px; justify-content: center; align-items: center; width: 100%;"><i class="fas fa-broom"></i></div>
                 </div>
                 <div class="blog-content">
                     <div class="blog-meta">Final Year Project • Full-Stack System</div>
@@ -90,6 +138,7 @@
     </footer>
 
     <script>
+        // Logik 1: Pengurusan Pertukaran Tema (Dark/Light Mode)
         const themeToggleBtn = document.getElementById('theme-toggle');
         const body = document.body;
 
@@ -107,6 +156,32 @@
                 themeToggleBtn.textContent = '🌙 Dark';
                 localStorage.setItem('theme', 'light');
             }
+        });
+
+        // Logik 2: Penapisan Projek Dinamik (Interactive Client-Side Filtering)
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.blog-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Tukar kelas aktif pada butang penapis
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                const filterValue = button.getAttribute('data-filter');
+                
+                // Papar atau sembunyikan kad projek berdasarkan kategori data
+                projectCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    if (filterValue === 'all' || cardCategory === filterValue) {
+                        card.style.display = 'block';
+                        setTimeout(() => { card.style.opacity = '1'; }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.display = 'none';
+                    }
+                });
+            });
         });
     </script>
 </body>
